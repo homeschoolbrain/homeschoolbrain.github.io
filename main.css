@@ -1,0 +1,74 @@
+header {
+	height:100px;
+	width:99%;
+	border:2px double blue;
+	background-color:blue;
+	margin-bottom:15 em;
+	padding:15 em;
+	}
+footer{
+	height:100px;
+	width:99%;
+	border:2px double blue;
+	background-color:blue;
+	
+		]
+  .wrap-trivia {
+	height: 500px;
+	width: 450px;
+	border: 5px double yellow;
+	} 
+ .wrap-list {
+	height: 400px;
+	width: 450px;
+	border: 5px dashed green;
+} 
+.wrap-text {
+color: #ff28e0;
+font-size: 2.1em;
+} 
+#roses{
+	display:inline-block;
+	position: fixed; 
+	left: 25%; 
+}
+#video {
+	
+margin:15px, 150px, 10px, 1.5px;;
+}
+.navitem{
+	list-style-type: none;
+	display:inline;
+	padding-right:1.5em;
+}
+#navmenu{
+	float:right;
+	width:250px
+	height:30px;
+	margin:auto;
+
+}
+ a:link{
+color:red;
+}
+
+a:visited{
+color:blue;
+}
+
+
+a:hover{
+color:purple;
+}
+
+a:active{
+color:orange;
+} 
+
+#rightside{
+	float:right
+	width:35%;
+}
+#leftside{
+	width:35%;
+}

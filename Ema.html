@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="main.css"/>
+		<title> Constitution for Kids! </title>
+		<script> 
+			function banner(){
+			var text = confirm("Did You Really Want to Click on My Banner?");
+			return text;
+			} 
+			function answer(){
+				var radio = document.getElementsByName("trivia");
+				var selection = false;
+				var message = ""; 
+				for( var i = 0; i < radio.length; i++) {
+					if(radio[i].value == "kcr" && radio[i].checked == true) {
+						selection = true;
+				} //end if statement
+				} //end for loop
+				if(selection == true) {
+					message = message + "<b><p style='color:green'>Way to go!</p></b>";
+				} else {
+			message = message + "<b><p style='color:red'>Try again my friend.</p></b>";
+						}
+			document.getElementById("response").innerHTML = message;
+			}//end function answer
+		</script>
+	</head>
+	<body>
+		<a href="http://google.com" onclick= "return banner ()">
+		<header> <h2>Learn about our</h2> 
+			<div id="rightside"> 
+			 	<span class="wrap-text"><h1> Founding Fathers</h1> 
+			 </span>
+			</div>
+		</header>
+		</a>
+		 <nav>
+			 	<ul id="navmenu">
+			 		<li class="navitem"><a href="index.html"></a> Home</li>
+			 		<li class="navitem"><a href="classes.html"></a>Classes</li>
+			 		<li class="navitem"> <a href="resources.html"></a>Resources</li>
+			 </nav>
+		 <audio width="400" height="220" controls autoplay>
+			<source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+			Your browser does not support HTML 5 audio.
+		</audio> 
+		 <div class="wrap-list">
+			<ol>
+				<li> George Washington </li>
+				<li> Benjamin Franklin</li>
+				<li> Thomas Jefferson</li>
+			</ol>
+		</div>
+	</div>
+	<div id="leftside">
+		<iframe id="video" src="https://player.vimeo.com/video/129846451" width="640" height="360" frameborder="0" webkit allowfullscreen moz allowfullscreen allowfullscreen></iframe>
+		<img id="roses" src="http://fyf.tac-cdn.net/images/products/large/F-208.jpg">
+		<div class="wrap-trivia">
+			<h2>Trivia Question: </h2>
+			<p>Which Document Ended the Slave Trade? </p>
+			<form>
+				<div id="response"> </div>
+					<input type="radio" name="trivia" value="stl">The 17th Amendment of the Constitution<br>
+					<input type="radio" name="trivia" value="sfg">The Emancipation Proclomation<br>
+					<input type="radio" name="trivia" value="kcr">The 13th Amendment of the Constitution.<br>
+					<input type="radio" name="trivia" value="nyy">Article 1 section 8 of the Constitution <br>
+					<input type="button" id="submit" value="submit" onclick="answer()">
+			</form>
+		</div>
+		
+		</div>
+		
+	<footer> Contact Info: thisisafakeemail@gmail.com </footer>
+	</body>
+</html> 
